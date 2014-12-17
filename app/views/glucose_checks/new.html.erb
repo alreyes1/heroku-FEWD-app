@@ -2,11 +2,12 @@
 <div class="wrapper">
 <div class="table">
 
-<h1>Add your glucose level</h1>
+<h1>Whats your Sugar level</h1>
 
 
 <%= render 'form' %>
-
-<%= link_to 'Back', glucose_checks_path %>
+<div class="back">
+<%= link_to 'Back', glucose_checks_path , :class => 'backBtn'%>
+</div>
 </div>
 </div>
