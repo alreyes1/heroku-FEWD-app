@@ -1,0 +1,29 @@
+<div class="wrapper">
+<h1>Listing glucose_checks</h1>
+
+<div class="table">
+<table>
+  <thead>
+    <tr>
+      <th>Glucose</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @glucose_checks.each do |glucose_check| %>
+      <tr>
+        <td><%= glucose_check.glucose %></td>
+        <td><%= link_to 'Show', glucose_check %></td>
+        <td><%= link_to 'Edit', edit_glucose_check_path(glucose_check) %></td>
+        <td><%= link_to 'Destroy', glucose_check, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Glucose check', new_glucose_check_path %>
+</div>
+</div>

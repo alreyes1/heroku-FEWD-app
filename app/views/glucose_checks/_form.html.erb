@@ -1,0 +1,21 @@
+<%= form_for(@glucose_check) do |f| %>
+  <% if @glucose_check.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@glucose_check.errors.count, "error") %> prohibited this glucose_check from being saved:</h2>
+
+      <ul>
+      <% @glucose_check.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= f.label :glucose %><br>
+    <%= f.text_field :glucose, placeholder:'Glucose Reading'%>
+  </div>
+  <div class="actions">
+    <%= f.submit "submit", :class => "glucoseSubmit" %>
+  </div>
+<% end %>
