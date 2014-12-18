@@ -14,3 +14,59 @@
 //= require jquery_ujs
 //= require turbolinks
 //= require_tree .
+$(document).ready(function(){
+
+	$(window).scroll(function() {
+    	$('.signUp').each(function(){
+    	var imagePos = $(this).offset().top;
+
+    	var topOfWindow = $(window).scrollTop();
+      		if (imagePos < topOfWindow+900) {
+        		$(this).addClass("tossing");
+      		}
+    	});
+  	});
+
+  	$(window).scroll(function() {
+    	$('.rowOne').each(function(){
+    	var imagePos = $(this).offset().top;
+
+   		 var topOfWindow = $(window).scrollTop();
+      		if (imagePos < topOfWindow+400) {
+        		$(this).addClass("slideRight");
+      		}
+    	});
+  	});
+    $(window).scroll(function() {
+    	$('.rowTwo').each(function(){
+    	var imagePos = $(this).offset().top;
+
+    	var topOfWindow = $(window).scrollTop();
+      		if (imagePos < topOfWindow+400) {
+        		$(this).addClass("slideLeft");
+      		}
+    	});
+  	});
+
+    $(window).scroll(function() {
+    	$('.rowThree').each(function(){
+    	var imagePos = $(this).offset().top;
+
+    	var topOfWindow = $(window).scrollTop();
+      		if (imagePos < topOfWindow+400) {
+        		$(this).addClass("slideRight");
+      		}
+    	});
+  	});
+    $(window).scroll(function() {
+    	$('.rowFour').each(function(){
+    	var imagePos = $(this).offset().top;
+
+    	var topOfWindow = $(window).scrollTop();
+      		if (imagePos < topOfWindow+400) {
+        		$(this).addClass("slideExpandUp");
+      		}
+    	});
+  	});
+
+ });
