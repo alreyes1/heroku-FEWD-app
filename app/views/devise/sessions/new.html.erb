@@ -1,28 +1,38 @@
 <div class="block">
 <div class="form">
-        <h2>Log in</h2>
+        <h2>LOGIN TO YOUR ACCOUNT</h2>
 
 <%= form_for(resource, as: resource_name, url: session_path(resource_name)) do |f| %>
-  <div class="field">
-    <%= f.label :email %><br />
-    <%= f.email_field :email, autofocus: true, placeholder: 'E-mail' %>
+
+  
+
+
+  <div class="form-group">
+    <%= f.label :email %>
+    <div class="input-group input-group-lg">
+      <span class="input-group-addon glyphicon glyphicon-user"></span>
+      <%= f.email_field :email, autofocus: true, placeholder: 'Hello@email.com', class: "form-control" %>
+    </div>
   </div>
 
-  <div class="field">
+  <div class="form-group">
     <%= f.label :password %><br />
-    <%= f.password_field :password, autocomplete: "off", placeholder:'Password'%>
-    
+    <div class="input-group input-group-lg">
+      <span class="input-group-addon glyphicon glyphicon-tower"></span>
+    <%= f.password_field :password, autocomplete: "off", placeholder:'Password',class: "form-control" %>
+    </div>  
   </div>
 
   <% if devise_mapping.rememberable? -%>
-    <div class="field">
+    <div class="checkbox">
       <%= f.check_box :remember_me %>
       <%= f.label :remember_me %>
     </div>
   <% end -%>
 
-  <div class="actions">
-    <%= f.submit "Log in", :class => "login" %>
+  <div class=".btn-block">
+
+    <%= f.submit "Log in", :class => "login btn btn-primary btn-lg btn-block" %>
   </div>
 <% end %>
 
@@ -31,13 +41,13 @@
 
 </div>
   
-
+<!-- 
 <% if notice %>
   <p class="alert alert-success"><%= notice %></p>
 <% end %>
 <% if alert %>
   <p class="alert alert-danger"><%= alert %></p>
 <% end %>
-
+ -->
   
 </div>
