@@ -66,6 +66,7 @@ body {
 	width: 36%;
 	height: 40em;
 	margin-left: 35%;
+	margin-bottom: 20%;
 }
 
 .block h2{
@@ -137,9 +138,6 @@ input {
 	float: left;
 }
 
-
-
-
 footer{
 	width: 100%;
 	height: 20em;
@@ -181,6 +179,8 @@ footer p{
 	background-color: #EA7049;
 	margin-bottom: 20px;
 	margin-top: 12px;
+	border: none;
+	box-shadow: 0 3px 0 0 #E83F01;
 }
 
 .sharedLinks{

@@ -5,26 +5,35 @@
 <%= form_for(resource, as: resource_name, url: registration_path(resource_name)) do |f| %>
   <%= devise_error_messages! %>
 
-  <div class="field">
+  <div class="form-group">
     <%= f.label :email %><br />
-    <%= f.email_field :email, autofocus: true %>
+    <div class="input-group input-group-lg">
+      <span class="input-group-addon glyphicon glyphicon-user"></span>
+    <%= f.email_field :email, autofocus: true, placeholder: 'Hello@email.com', class: "form-control" %>
   </div>
+    </div>
 
-  <div class="field">
+  <div class="form-group">
     <%= f.label :password %>
+    <div class="input-group input-group-lg">
+    <span class="input-group-addon glyphicon glyphicon-tower"></span>    
     <% if @validatable %>
     <em>(<%= @minimum_password_length %> characters minimum)</em>
     <% end %><br />
-    <%= f.password_field :password, autocomplete: "off" %>
+    <%= f.password_field :password, autocomplete: "off", placeholder:'Password',class: "form-control" %>
+  </div>
   </div>
 
-  <div class="field">
+  <div class="form-group">
     <%= f.label :password_confirmation %><br />
-    <%= f.password_field :password_confirmation, autocomplete: "off" %>
+     <div class="input-group input-group-lg">
+      <span class="input-group-addon glyphicon glyphicon-tower"></span>
+    <%= f.password_field :password_confirmation, autocomplete: "off", placeholder:'Confirm Password',class: "form-control" %>
+  </div>
   </div>
 
-  <div class="actions">
-    <%= f.submit "Sign up" %>
+  <div class=".btn-block">
+    <%= f.submit "Sign up", :class => "login btn btn-primary btn-lg btn-block" %>
   </div>
 <% end %>
 
