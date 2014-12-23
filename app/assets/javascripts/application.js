@@ -28,17 +28,28 @@ $(document).ready(function(){
   	});
 
   	$(window).scroll(function() {
-    	$('.rowOne').each(function(){
+    	$('#imgOne').each(function(){
     	var imagePos = $(this).offset().top;
 
    		 var topOfWindow = $(window).scrollTop();
+      		if (imagePos < topOfWindow+400) {
+        		$(this).addClass("slideLeft");
+      		}
+    	});
+  	});
+    $(window).scroll(function() {
+    	$('#imgTwo').each(function(){
+    	var imagePos = $(this).offset().top;
+
+    	var topOfWindow = $(window).scrollTop();
       		if (imagePos < topOfWindow+400) {
         		$(this).addClass("slideRight");
       		}
     	});
   	});
+
     $(window).scroll(function() {
-    	$('.rowTwo').each(function(){
+    	$('#imgThree').each(function(){
     	var imagePos = $(this).offset().top;
 
     	var topOfWindow = $(window).scrollTop();
@@ -47,19 +58,8 @@ $(document).ready(function(){
       		}
     	});
   	});
-
     $(window).scroll(function() {
-    	$('.rowThree').each(function(){
-    	var imagePos = $(this).offset().top;
-
-    	var topOfWindow = $(window).scrollTop();
-      		if (imagePos < topOfWindow+400) {
-        		$(this).addClass("slideRight");
-      		}
-    	});
-  	});
-    $(window).scroll(function() {
-    	$('.rowFour').each(function(){
+    	$('#imgFour').each(function(){
     	var imagePos = $(this).offset().top;
 
     	var topOfWindow = $(window).scrollTop();

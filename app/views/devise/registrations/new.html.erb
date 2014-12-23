@@ -15,11 +15,12 @@
 
   <div class="form-group">
     <%= f.label :password %>
-    <div class="input-group input-group-lg">
-    <span class="input-group-addon glyphicon glyphicon-tower"></span>    
     <% if @validatable %>
     <em>(<%= @minimum_password_length %> characters minimum)</em>
     <% end %><br />
+    <div class="input-group input-group-lg">
+    <span class="input-group-addon glyphicon glyphicon-tower"></span>    
+    
     <%= f.password_field :password, autocomplete: "off", placeholder:'Password',class: "form-control" %>
   </div>
   </div>
