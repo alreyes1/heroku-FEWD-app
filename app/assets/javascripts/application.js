@@ -69,4 +69,10 @@ $(document).ready(function(){
     	});
   	});
 
+      $(window).hover(function() {
+      $('.signUp').each(function(){
+            $(this).removeClass("tossing");
+          
+      });
+    });
  });

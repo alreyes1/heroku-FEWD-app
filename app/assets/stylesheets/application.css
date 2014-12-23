@@ -21,7 +21,7 @@ body {
 	color: #333;
 	background-color: #C9B695;
 }
-	.navbar-default .navbar-nav>.active>a, .navbar-default .navbar-nav>.active>a:hover, .navbar-default .navbar-nav>.active>a:focus {
+.navbar-default .navbar-nav>.active>a, .navbar-default .navbar-nav>.active>a:hover, .navbar-default .navbar-nav>.active>a:focus {
 	color: #555;
 	background-color: rgba(250, 73, 113, 0.54);
 }
@@ -80,11 +80,10 @@ color: #FFFFff;
 	float: none;
 }
 
-
 .block{
 	margin-top: 10%;
 	width: 36%;
-	height: 40em;
+	/*height: 40em;*/
 	margin-left: 35%;
 	margin-bottom: 20%;
 }
@@ -97,8 +96,8 @@ color: #FFFFff;
 	background-color: rgba(255, 255, 255, .5);
 	margin-top: 10%;
 	float: left;
-
 }
+
 .form{
 	background-color: #ffffff;
 	color: #8D7F72;
@@ -124,6 +123,7 @@ color: #FFFFff;
 	height: 30em;
 	padding-left: 2em;
 }
+
 .containerOne:after {
 	clear: both;
 	display: table;
@@ -207,4 +207,120 @@ footer p{
 	border-radius: 4px;
 	-webkit-box-shadow: none;
 	box-shadow: none;
+}
+
+.active:hover {
+	transform: scale(1.05);
+}
+.navbar-brand:hover {
+	transform: scale(1.05);
+}
+.pull-right:hover {
+	transform: scale(1.15);
+	text-decoration: none;
+	color:#ffffff;
+}
+@media screen and (min-width: 420px) and (max-width: 767px){
+	.hero h2 {
+		font-family: "Gotham A","Gotham B",Helvetica,Arial,sans-serif;
+		font-weight: 900;
+		text-transform: uppercase;
+		font-size: 50px;
+		padding: 13% 65% 0 1%;
+		margin-top: 2%;
+		line-height: 150%;
+	}
+
+	.signUp {
+		text-align: center;
+		border: solid rgba(255, 253, 254, 0.68);
+		border-radius: 5px;
+		border-width: thin;
+		padding: 3px 10px;
+		margin-right: 11%;
+		float: right;
+		margin-top: -20%;
+		font-size: 30px;
+	}
+
+	.scrollDown {
+		float: left;
+		margin-left: 48%;
+		margin-top: -15%;
+	}
+
+	.scrollDown a {
+		padding-left: 27%;
+		color: #ffffff;
+		font-size: 28px;
+		text-decoration: none;
+	}
+
+   .mainContent h3 {
+		font-size: 25px;
+		font-family: "Open Sans","lucida grande","Segoe UI",arial,verdana,"lucida sans unicode",tahoma,sans-serif;
+		color: #33536d;
+	}
+
+	#parOne h2 {
+		font-size: 25px;
+		margin-bottom: 7%;
+	}
+	#parOne p {
+		float: left;
+		text-align: left;
+		font-size: 15px;
+		padding-top: 0%;
+	}
+	
+	#imgOne {
+
+	visibility: hidden;
+	width: 70%;
+	height: 80%;
+	border-radius: 0;
+	float: right;
+	margin-right: -35%;
+
+	}
+	
+	#parTwo h2 {
+		font-size: 25px;
+		margin-bottom: 7%;
+	}
+
+	#parTwo p {
+		float: right;
+		text-align: left;
+		font-size: 15px;
+		padding-top: 0%;
+	}
+	
+	#imgTwo {
+		visibility: hidden;
+		width: 70%;
+		height: 80%;
+		border-radius: 0;
+		float: left;
+		margin-left: -35%;
+	}
+	
+	#imgThree {
+		visibility: hidden;
+		width: 70%;
+		height: 80%;
+		border-radius: 0;
+		float: right;
+		margin-right: -35%;
+	}
+
+	#imgFour {
+		visibility: hidden;
+		width: 70%;
+		height: 80%;
+		border-radius: 0;
+		float: left;
+		margin-left: -35%;
+	}
+
 }

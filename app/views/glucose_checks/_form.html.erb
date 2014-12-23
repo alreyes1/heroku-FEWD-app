@@ -11,11 +11,12 @@
     </div>
   <% end %>
 
-  <div class="field">
+  <div class="form-group">
     <%= f.label :glucose %><br>
-    <%= f.text_field :glucose, placeholder:'Glucose Reading'%>
+    <div class="input-group input-group-lg">
+    <%= f.text_field :glucose, placeholder:'Glucose Reading', class: "form-control" %>
   </div>
-  <div class="actions">
-    <%= f.submit "Submit", :class => "glucoseSubmit" %>
+  <div class=".btn-block">
+    <%= f.submit "Submit", :class => "glucoseSubmit login btn btn-primary btn-lg"%>
   </div>
 <% end %>
